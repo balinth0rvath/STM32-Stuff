@@ -91,15 +91,17 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  unsigned char delay = 1;
   while (1)
   {
     /* USER CODE END WHILE */
 
 
 	/* USER CODE BEGIN 3 */
+
 	HAL_GPIO_TogglePin(Ld2_GPIO_Port,Ld2_Pin); //Toggle LED
 
-    HAL_Delay(311);
+    HAL_Delay(delay++>>2);
 
   }
   /* USER CODE END 3 */
